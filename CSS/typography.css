@@ -43,6 +43,50 @@ h6 {
 	clear: both;
 }
 
+.talkbubble {
+	display: block;
+	margin: 40px auto;
+	padding: 1em;
+	width: 200px;
+	position: relative;
+	height: auto;
+	background-color: white;
+	border: 8px solid #666;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	text-align: center;
+}
+.talkbubble:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 30px;
+  	right: auto;
+  	top: auto;
+	bottom: -40px;
+	border: 20px solid;
+	border-color: #666 transparent transparent #666;	
+}
+.talkbubble:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 38px;
+  	right: auto;
+  	top: auto;
+	bottom: -20px;
+	border: 12px solid;
+	border-color: white transparent transparent white;
+}
+.talkbubble h2 {
+	-webkit-margin-before: 0em;
+	-webkit-margin-after: 0em;
+}
+
+
 p {
 	font-size: 1em;
 	margin-bottom: 1.5em;
