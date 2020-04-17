@@ -5,9 +5,32 @@ Layouts
 body {
     background: hsl(0, 0%, 90%);
 }
+.sectionOne {
+    padding: 1em;
+}
+
+.sectionTwo {
+    background: rgb(107, 104, 111);
+    color: white;
+    margin: 0;
+    padding: 1em;
+}
+
+.sectionThree {
+    background: rgb(212, 188, 54);
+    color: hsla(260, 6%, 21%, 1);
+    margin: 0;
+    padding: 1em;
+}
+
+.sectionFour {
+    background: rgb(202, 103, 121);
+    color: hsla(260, 6%, 21%, 1);
+    margin: 0;
+    padding: 1em;
+}
 
 .content {
-    padding: 2em;
 }
 
 .footer-area {

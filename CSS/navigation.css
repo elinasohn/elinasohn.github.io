@@ -36,7 +36,7 @@ Main Navigation
 .main-navigation a:hover,
 .main-navigation a:focus {
 	background: #fff;
-	color: #000;
+	color: hsla(260, 6%, 21%, 1);
 }
 
 .main-navigation a,
@@ -104,7 +104,7 @@ Main Navigation
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
 	background-color: #fff;
-	color: #000;
+	color: hsla(260, 6%, 21%, 1);
 }
 
 .dropdown-toggle.toggle-on:after {
@@ -130,7 +130,7 @@ Main Navigation
 	font-family: sans-serif;
 	font-size: 1em;
 	text-transform: uppercase;
-	background-color: #000;
+	background-color: hsla(260, 6%, 21%, 1);
 	color: #fff;
 	border: solid 2px #fff;
 	transition: all ease-out 400ms;
@@ -175,7 +175,7 @@ Main Navigation
 .nav-menu {
 	padding: 1em;
 	margin-bottom: 3em;
-	background-color: #000;
+	background-color: hsla(260, 6%, 21%, 1);
 }
 
 .main-navigation.toggled ul {
@@ -247,7 +247,7 @@ Main Navigation
 	.main-navigation a:hover,
 	.main-navigation a:focus {
 		background: transparent;
-		color: #333;
+		color: hsla(260, 6%, 21%, 1);
 		text-decoration: underline;
 		outline: solid 1px #b3b3b3;
 	}
@@ -260,7 +260,7 @@ Main Navigation
 	.main-navigation li li a:hover,
 	.main-navigation li li a:focus {
 		background: #eee;
-		color: #000;
+		color: hsla(260, 6%, 21%, 1);
 		text-decoration: none;
 	}
 
@@ -272,7 +272,7 @@ Main Navigation
 		z-index: 10;
 		margin-left: 0;
         padding: 0;
-		background: #000;
+		background: hsla(260, 6%, 21%, 1);
 	}
 
 	.main-navigation ul ul ul.toggled-on {

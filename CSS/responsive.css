@@ -1,0 +1,35 @@
+@media (min-width: 600px) {
+    .talkbubble {
+        padding: 2em;
+        border-radius: 40px;
+        -webkit-border-radius: 40px;
+    }
+    #belowBubble {
+        font-size: 1.1em;
+    }
+    #bulb {
+        max-width: 80px;
+        width: 100%;
+    }
+    .sectionH2 {
+        font-size: 1.7em;
+    }
+    #lang {
+        font-size: 1.4em;
+    }
+  }
+
+  @media (min-width: 800px) { 
+    .sectionH2 {
+          font-size: 1.9em;
+      }
+      .block {
+          display: unset;
+      }
+      .wrapper {
+          display: unset;
+      }
+      #lang {
+          font-size: 1.7em;
+      }
+  }

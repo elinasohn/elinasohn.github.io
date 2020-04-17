@@ -7,6 +7,13 @@ img {
     width: 100%;
 }
 
+#bulb {
+    max-width: 50px;
+    width: 100%;
+    margin: auto;
+    padding: 1em 0 0.5em;
+}
+
 figure {
     margin: 0;
     padding: 0;
