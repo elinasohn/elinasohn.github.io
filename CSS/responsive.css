@@ -7,7 +7,7 @@
     #belowBubble {
         font-size: 1.1em;
     }
-    #bulb {
+    .bulb {
         max-width: 80px;
         width: 100%;
     }

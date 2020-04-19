@@ -12,7 +12,7 @@ img {
     margin-top: 0.2em;
 }
 
-#bulb {
+.bulb {
     max-width: 50px;
     width: 100%;
     margin: auto;
