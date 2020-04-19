@@ -29,12 +29,15 @@
     } 
     .sectionH2 {
           font-size: 1.9em;
-      }
-      .block {
+    }
+    .block {
           display: unset;
-      }
-      #lang {
+    }
+    #lang {
           font-size: 1.7em;
           text-align: center;
-      }
+    }
+    #belowBubble {
+        padding: 0 2em;
+    }
   }
