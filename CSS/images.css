@@ -7,6 +7,11 @@ img {
     width: 100%;
 }
 
+.site-title {
+    width: 65px;
+    margin-top: 0.2em;
+}
+
 #bulb {
     max-width: 50px;
     width: 100%;
