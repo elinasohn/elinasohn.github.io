@@ -16,6 +16,7 @@
     }
     #lang {
         font-size: 1.4em;
+        padding: 0 4em;
     }
   }
 
@@ -26,10 +27,8 @@
       .block {
           display: unset;
       }
-      .wrapper {
-          display: unset;
-      }
       #lang {
           font-size: 1.7em;
+          text-align: center;
       }
   }
