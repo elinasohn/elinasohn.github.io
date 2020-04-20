@@ -91,7 +91,6 @@ h6 {
 }
 
 p {
-	color: hsla(260, 6%, 21%, 1);
 }
 
 #belowBubble {
@@ -191,6 +190,7 @@ big {
 h1 {
 	font-size: 1.8em;
 	line-height: 1.25;
+	padding: 0 0.6em;
 }
 
 h2 {
