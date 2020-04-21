@@ -6,7 +6,7 @@ body {
     background: hsl(0, 0%, 90%);
 }
 .sectionOne {
-    padding: 1em;
+    padding: 2em 1em;
     color: hsla(260, 6%, 21%, 1);
 }
 
@@ -14,21 +14,21 @@ body {
     background: rgb(5, 94, 142);
     color: white;
     margin: 0;
-    padding: 1em;
+    padding: 5em 1em;
     text-align: center;}
 
 .sectionThree {
     background: rgb(217, 235, 24);
     color: hsla(260, 6%, 21%, 1);
     margin: 0;
-    padding: 1em;
+    padding: 3em 1em;
 }
 
 .sectionFour {
     background: hsla(260, 6%, 21%, 1);
     color: white;
     margin: 0;
-    padding: 1em;
+    padding: 3em 1em;
 }
 
 .contentForAbout {

@@ -39,10 +39,22 @@
     }
     #lang {
           font-size: 1.7em;
-          text-align: center;
     }
     #belowBubble {
         padding: 0 2em;
+    }
+    .sectionThree {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bulb {
+        margin: 1em;
+    }
+    .sectionFour {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
   }
 
