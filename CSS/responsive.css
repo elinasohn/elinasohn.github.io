@@ -27,7 +27,7 @@
     }
   }
 
-  @media (min-width: 820px) {
+  @media (min-width: 800px) {
     .site-title {
         max-width: 85px;
     } 
@@ -44,16 +44,20 @@
     #belowBubble {
         padding: 0 2em;
     }
+  }
+
+  @media (min-width: 860px) {
     .pictureMe {
     }
     .sectionAbout {
-        margin: 4em;
+        margin: 4em 5em;
     }
     .flexSection {
         display: flex;
     }
     .aboutText {
-        margin: 2em;
+        margin: 0.2em;
+        padding: 2em;
     }
     h1 {
         text-align: center;
