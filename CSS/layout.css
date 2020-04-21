@@ -15,18 +15,18 @@ body {
     color: white;
     margin: 0;
     padding: 1em;
-}
+    text-align: center;}
 
 .sectionThree {
-    background: rgb(212, 188, 54);
+    background: rgb(199, 212, 54);
     color: hsla(260, 6%, 21%, 1);
     margin: 0;
     padding: 1em;
 }
 
 .sectionFour {
-    background: rgb(202, 103, 121);
-    color: hsla(260, 6%, 21%, 1);
+    background: hsla(260, 6%, 21%, 1);
+    color: white;
     margin: 0;
     padding: 1em;
 }

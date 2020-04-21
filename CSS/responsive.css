@@ -21,9 +21,13 @@
         font-size: 1.4em;
         padding: 0 4em;
     }
+    .pictureMe {
+        max-width: 350px;
+        width: 100%;
+    }
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 820px) {
     .site-title {
         max-width: 85px;
     } 
@@ -39,5 +43,21 @@
     }
     #belowBubble {
         padding: 0 2em;
+    }
+    .pictureMe {
+    }
+    .sectionAbout {
+        margin: 4em;
+    }
+    .flexSection {
+        display: flex;
+    }
+    .aboutText {
+        margin: 2em;
+    }
+    h1 {
+        text-align: center;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
   }
