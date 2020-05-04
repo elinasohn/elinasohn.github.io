@@ -18,14 +18,14 @@ body {
     text-align: center;}
 
 .sectionThree {
-    background: rgb(217, 235, 24);
-    color: hsla(260, 6%, 21%, 1);
+    background: rgb(58, 58, 58);
+    color: rgb(255, 255, 255);
     margin: 0;
     padding: 3em 1em;
 }
 
 .sectionFour {
-    background: hsla(260, 6%, 21%, 1);
+    background: rgb(118, 118, 118);
     color: white;
     margin: 0;
     padding: 3em 1em;

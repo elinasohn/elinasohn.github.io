@@ -1,0 +1,12 @@
+.cls-2 {
+    animation: blink 2s steps(5, start) infinite alternate;
+}
+
+@keyframes blink {
+    from {
+        fill: #EFEFEF;
+    }
+    to {
+        fill: #E4F726;
+    }
+  }

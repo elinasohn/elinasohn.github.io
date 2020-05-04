@@ -1,0 +1,68 @@
+body {
+    background: url("../Images/blurred.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.one {
+    padding: 1em;
+}
+
+.card {
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+h2 {
+    font-family: 'Caveat', cursive;
+    font-size: 2em;
+    padding: 0.2em 0;
+    margin: 0;
+}
+
+h3 {
+    color: rgb(209, 139, 8);
+}
+
+.howTo{
+    padding: 0.4em;
+}
+
+.ingred {
+    column-count: 2;
+}
+
+.food {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 420px) {
+    .food {
+        max-height: 320px;
+        overflow: hidden;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .food {
+        max-height: 400px;
+    }
+    .howTo {
+        padding: 1.2em;
+    }
+    h2 {
+        font-size: 2.4em;
+    }
+    .ingred, .direc {
+        line-height: 2em;
+    }
+}
+
+@media screen and (min-width: 820px) {
+    .card {
+        width: 65%;
+    }
+}
