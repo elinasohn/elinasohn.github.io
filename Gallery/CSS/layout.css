@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+.one {
+    padding: 4em 5em;
+}
+
+footer {
+    text-align: center;
+}
