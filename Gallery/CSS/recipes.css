@@ -11,6 +11,7 @@ body {
 
 .card {
     background-color: white;
+    box-shadow: 0 4px 8px 0 #797979;
     width: 90%;
     margin: auto;
     margin-top: 2em;
@@ -66,5 +67,8 @@ h3 {
 @media screen and (min-width: 820px) {
     .card {
         width: 65%;
+    }
+    .one {
+        padding: 2em;
     }
 }
