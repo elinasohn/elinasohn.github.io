@@ -25,8 +25,16 @@ body {
      margin: 0;
  }
  .desc {
-    margin: 0 0 1.5em 0;
+    margin: 0;
     padding: 0;
+}
+.button {
+   background-color: rgb(45, 45, 45);
+   color: white;
+   font-size: 0.7em;
+   padding: 0.4em 1em;
+   margin: 0.6em 0 1.4em;
+   float: right;
 }
 
  @media screen and (min-width : 490px) {
