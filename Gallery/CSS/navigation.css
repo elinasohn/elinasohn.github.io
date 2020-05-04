@@ -1,4 +1,4 @@
-a {
+nav a {
     text-decoration: none;
     color: #1E1E23;
     opacity:1;
@@ -7,7 +7,7 @@ a {
     font-weight: 400;
     transition: 200ms;
 }
-a:hover {
+nav a:hover {
     opacity:0.5;
 }
 ul {
