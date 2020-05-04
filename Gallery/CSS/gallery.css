@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Open+Sans&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     background: #EEE;
- }
+}
+
+.oneIndex {
+   text-align: center;
+   padding: 0.5em;
+}
+
+.logo {
+   margin: 0.2em 0;
+   font-family: 'Caveat Brush', cursive;
+}
+
+.logoDesc{
+   font-size: 1em;
+}
+
 .wrap {
     display: flex;
     justify-content: space-between;
@@ -10,17 +27,17 @@ body {
     align-items: flex-start;
     flex-direction: row;
     margin: 10px;
- }
+}
 .box {
     width: 100%;
     margin: 1em;
     margin-bottom: auto;
     box-shadow: 0 4px 8px 0 #b1b1b1;
- }
+}
 
 .box img {
     width: 100%;
- }
+}
 
 .textBox {
    padding: 1em;
@@ -62,15 +79,18 @@ body {
     }
  }
  @media screen and (min-width: 650px) {
-     .box {
+   .box {
          width: calc(33.3% - .5em);
-     }
-     .button {
+   }
+   .button {
         font-size: 0.8em;
-     }
+   }
+   .oneIndex {
+        margin: 2em 0;
+   }
  }
  @media screen and (min-width: 880px) {
-    .wrap {
+   .wrap {
         width: 80%;
         margin: 0 auto;
     }
@@ -80,6 +100,9 @@ body {
    }
    .foodName {
       font-size: 1.6em;
+   }
+   .oneIndex {
+      margin: 3em 0;
    }
  }
 
