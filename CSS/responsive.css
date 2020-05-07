@@ -25,9 +25,14 @@
         max-width: 350px;
         width: 100%;
     }
+/*     .animateText {
+        top: 30%;
+        left: 25%;
+        font-size: 2em;
+    } */
   }
 
-  @media (min-width: 800px) {
+  @media screen and (min-width: 800px) {
     .site-title {
         max-width: 85px;
     } 
@@ -58,9 +63,7 @@
     }
   }
 
-  @media (min-width: 860px) {
-    .pictureMe {
-    }
+  @media screen and (min-width: 860px) {
     .sectionAbout {
         margin: 4em 5em;
     }
@@ -76,4 +79,9 @@
         margin-top: 2em;
         margin-bottom: 2em;
     }
+    /* .animateText {
+        top: 30%;
+        left: 30%;
+        font-size: 4em;
+    } */
   }

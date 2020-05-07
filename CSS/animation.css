@@ -1,3 +1,36 @@
+.sectionOne {
+    position: relative;
+}
+
+#monitor {
+    width: 100%;
+    max-width: 720px;
+    margin: auto;
+    margin-top: 2em;
+}
+
+.animateText {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 20em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    color: white;
+    font-size: 2.8em;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
+}
+
+.anim {
+    width:0;
+}
+
 .cls-2 {
     animation: blink 2s steps(5, start) infinite alternate;
 }

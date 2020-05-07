@@ -2,11 +2,11 @@
 Layouts
 --------------------------------------------------------------*/
 
-body {
-    background: hsl(0, 0%, 90%);
-}
+
+
 .sectionOne {
     padding: 2em 1em;
+    background-color: rgb(235, 117, 44);
     color: hsla(260, 6%, 21%, 1);
 }
 
@@ -14,21 +14,21 @@ body {
     background: rgb(5, 94, 142);
     color: white;
     margin: 0;
-    padding: 5em 1em;
+    padding: 10em 1em;
     text-align: center;}
 
 .sectionThree {
     background: rgb(58, 58, 58);
     color: rgb(255, 255, 255);
     margin: 0;
-    padding: 3em 1em;
+    padding: 10em 1em;
 }
 
 .sectionFour {
     background: rgb(118, 118, 118);
     color: white;
     margin: 0;
-    padding: 3em 1em;
+    padding: 10em 1em;
 }
 
 .contentForAbout {
