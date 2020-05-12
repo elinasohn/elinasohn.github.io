@@ -12,7 +12,7 @@ module.exports = function(grunt) {
         * https://www.npmjs.com/package/grunt-sass
         */
 
-         sass: {
+        sass: {
             options: {
                 implementation: sass,
                 sourceMap: false
@@ -48,22 +48,31 @@ module.exports = function(grunt) {
                     'uglify'
                 ]
             }
-          },
+        },
 
           /* Grunt Contrib Uglify
           * https://www.npmjs.com/package/grunt-contrib-uglify
           */
 
-          uglify: {
+        uglify: {
 
             my_target: {
 
                 files: {
-                    'js/scripts.js': ['Assets/js/scripts.js']
+                    'js/scripts.js': ['Assets/js/scripts.js', 'node_modules/jquery/dist/jquery.js']
                 }
             }
 
-          }
+        },
+          
+          /* Grunt Contrib Jshint
+          * https://www.npmjs.com/package/grunt-contrib-jshint
+          */
+
+        jshint: {
+
+                all: ['gruntfile.js', 'Assets/js/scripts.js', 'js/scripts.js']
+        }
     });
     
     
