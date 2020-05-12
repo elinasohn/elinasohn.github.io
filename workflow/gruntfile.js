@@ -7,25 +7,15 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
 
 
-        sass: {
+         sass: {
             options: {
                 implementation: sass,
                 sourceMap: false
             },
             dist: {
                 files: {
-                    'CSS/style.css': 'Asset/scss/style.scss'
+                    'CSS/style.css': 'Assets/scss/style.scss'
                 }
-            }
-        },
-
-        uglify: {
-            options: {
-                banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
-            },
-            build: {
-                src: 'src/<%= pkg.name %>.js',
-                dest: 'build/<%= pkg.name %>.min.js'
             }
         }
     });
@@ -35,6 +25,5 @@ module.exports = function(grunt) {
     require('load-grunt-tasks')(grunt);
     
     /*Custom tasks */
-    
-    grunt.registerTask('default', ['watch']);
+    grunt.registerTask('default', []);
 };
