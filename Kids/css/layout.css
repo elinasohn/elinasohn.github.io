@@ -1,0 +1,15 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+main {
+    display: inline-block;
+    margin-top: 15em;
+}
+
+footer {
+    padding: 15em 2em;
+    text-align: center;
+}
