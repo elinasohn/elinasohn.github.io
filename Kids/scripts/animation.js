@@ -2,19 +2,15 @@ gsap.to(".site-name", {repeat: -1, duration: 8, ease: "none", backgroundPosition
 
 /***********************/
 
-gsap.set(".talkbubble", {autoAlpha: 1, xPercent:-100})
+gsap.from("#bear", {duration: 2, y:-150, ease: "bounce", });
+gsap.from("#deer", {duration: 2, y:-150, ease: "bounce", });
 
-var $page = $('.talkbubble'),
-    $button = $('.animal-first');
+/***********************/
 
-$button.on('mouseenter', function(e) {
-  var $thisPage = $(this).attr('id');
-  console.log($thisPage);
+var t = TweenLite.to(".rabbit", 1, {x:490, display:'block', paused:true, reversed:true});
 
-  gsap.to($thisPage, 0.8, {xPercent:0, ease: Sine.easeInOut});
-});
-
-$button.on('mouseleave', function(e) {
-  gsap.to($page, 0.4, {xPercent:-100, ease: Power2.easeIn});
-});
-
+function toggle() {
+  
+  t.reversed() ? t.play() : t.reverse();
+  
+}

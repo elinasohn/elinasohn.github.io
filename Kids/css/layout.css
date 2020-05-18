@@ -38,15 +38,15 @@ section {
 }
 
 .second {
-    background-color: blueviolet;
-    background-image: url(../images/pencil-bg.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100% 90%;
+    background-color: rgb(78, 201, 101);
 }
 
 .third {
     background-color: rgb(226, 153, 43);
+}
+
+.third p:first-child {
+    padding-top: 25%;
 }
 /**********************************************/
 .license-h1 {
@@ -66,12 +66,6 @@ section {
     margin-top: 10%;
 }
 
-#bear {
-}
-
-#deer {
-}
-
 .site-name {
     margin: 0 auto;
     top: 60%;
@@ -87,12 +81,57 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+/**********************************************/
 
+.second-h2 {
+    font-size: 3rem;
+    padding-top: 3rem;
+    margin: 0 auto;
+}
+
+#btn {
+    width: 40%;
+    margin-top: 5rem;
+    cursor: pointer;
+}
+
+
+.rabbit {
+    width: 15%;
+    top: -44%;
+    position: relative;
+    display: none;
+    z-index: 1;
+}
+
+/**********************************************/
 footer {
     display: block;
 }
-
-@media screec and (max-width:600px) {
+@media (min-width:280px) and (max-width: 480px) {
+    .site-name {
+        top:35%;
+    }
+/*     .animal-first {
+        width: 30%;
+    }
+    .first {
+        background-position-y: 18rem;
+    } */
+    .second-h2 {
+        padding: 3 0.5rem 0;
+        font-size: 2rem;
+    }
+    #btn {
+        width: 80%;
+        margin-top: 9rem;
+    }
+/*     .rabbit {
+        width: 30%;
+        top: -25%;
+    } */
+}
+@media (max-width:680px) {
     .site-name{
         top:30%;
         left:50%;
@@ -100,4 +139,7 @@ footer {
     .animal-first {
         width: 40%;
     }
+/*     #btn {
+        width: 80%;
+    } */
 }

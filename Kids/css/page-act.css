@@ -1,0 +1,44 @@
+.act-h1 {
+    margin: 0 auto;
+    padding-top: 2rem;
+    font-size: 2rem;
+}
+
+.act {
+    background-color: rgb(222, 139, 16);
+}
+
+.basket {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 70%;
+}
+
+.sticker-box {
+    z-index: 9;
+    position: absolute;
+}
+
+.sticker {
+    width: 10rem;
+    z-index: 10;
+    cursor: pointer;
+}
+@media (max-width:400px) {
+    .sticker-box {
+        width: 5vh;
+    }
+}
+
+@media (max-width:700px) {
+    .act {
+        padding: 0 1rem;
+    }
+    .basket {
+        width: 90%;
+    }
+    .sticker {
+        width: 15vh;
+    }
+}
