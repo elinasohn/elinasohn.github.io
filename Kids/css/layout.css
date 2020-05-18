@@ -2,14 +2,102 @@ html {
     margin: 0;
     padding: 0;
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    height: 100%;
 }
 
-main {
-    display: inline-block;
-    margin-top: 15em;
+body {
+    margin: 0;
+    height: 100%;
+}
+
+p {
+    margin: 0 auto;
+}
+
+section {
+    text-align: center;
+    color: #EFEFEF;
+}
+
+.full-screen {
+    height: 100vh;
+}
+
+.first {
+    width: 100%;
+    background-color: rgb(226, 214, 43);
+    background-image: url(../images/grass-bg.svg);
+    background-position-y: 15rem;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.position {
+    position: relative;
+}
+
+.second {
+    background-color: blueviolet;
+    background-image: url(../images/pencil-bg.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 90%;
+}
+
+.third {
+    background-color: rgb(226, 153, 43);
+}
+/**********************************************/
+.license-h1 {
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+/**********************************************/
+
+.animals {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.animal-first {
+    width: 20%;
+    margin-top: 10%;
+}
+
+#bear {
+}
+
+#deer {
+}
+
+.site-name {
+    margin: 0 auto;
+    top: 60%;
+    left: 55%;
+    transform: translate(-60%, -50%);
+    position: absolute;
+    font-size: 5rem;
+    z-index: 1;
+    background: linear-gradient(to right, rgb(255, 136, 32) 20%, rgb(199, 66, 5) 40%, rgb(199, 66, 5) 60%, rgb(255, 136, 32) 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 footer {
-    padding: 15em 2em;
-    text-align: center;
+    display: block;
+}
+
+@media screec and (max-width:600px) {
+    .site-name{
+        top:30%;
+        left:50%;
+    }
+    .animal-first {
+        width: 40%;
+    }
 }
