@@ -1,0 +1,6 @@
+@mixin sections($color) {
+    margin: 0;
+    padding: 10em 1em;
+    color: white;
+    background: $color;
+}

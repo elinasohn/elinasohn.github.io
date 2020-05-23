@@ -1,9 +1,5 @@
-@mixin sections($color) {
-    margin: 0;
-    padding: 10em 1em;
-    color: white;
-    background: $color;
-}
+@import "mixins";
+@import "partial/mixins";
 
 .sectionThree {
     @include sections(rgb(58, 58, 58));
