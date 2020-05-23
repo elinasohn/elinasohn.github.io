@@ -1,0 +1,14 @@
+@mixin sections($color) {
+    margin: 0;
+    padding: 10em 1em;
+    color: white;
+    background: $color;
+}
+
+.sectionThree {
+    @include sections(rgb(58, 58, 58));
+}
+
+.sectionFour {
+    @include sections(rgb(118, 118, 118));
+}
