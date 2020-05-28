@@ -1,0 +1,23 @@
+{
+  "name": "elinasohn.github.io",
+  "version": "1.0.0",
+  "description": "The library that I choose is <a href=\"https://d3js.org\">D3.js</a>. It stands for Date-Driven Documents, which is a JavaScript library that visualizes documents dynamically and interactively based on data. It makes use of SVG, HTML5, and CSS standards.",
+  "main": "index.js",
+  "dependencies": {
+    "d3": "^5.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elinasohn/elinasohn.github.io.git"
+  },
+  "author": "Yujin Sohn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elinasohn/elinasohn.github.io/issues"
+  },
+  "homepage": "https://github.com/elinasohn/elinasohn.github.io#readme"
+}
