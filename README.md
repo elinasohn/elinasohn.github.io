@@ -1,7 +1,8 @@
 # Lab: Assessing Javascript Libraries
 The library that I choose is <a href="https://d3js.org">D3.js</a>. It stands for Date-Driven Documents, which is a JavaScript library that visualizes documents dynamically and interactively based on data. It makes use of SVG, HTML5, and CSS standards.
 
-npm d3 URL: <a href="https://www.npmjs.com/package/d3">https://www.npmjs.com/package/d3</a>
+npm d3 URL: <a href="https://www.npmjs.com/package/d3">https://www.npmjs.com/package/d3</a><br>
+Demo page: <a href="demo.html">demo.html</a>
 
 ## Usability - how will the library functionality clearly help your users?
 This will make data more understandable to users by visualizing it.
