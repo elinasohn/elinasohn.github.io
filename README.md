@@ -18,6 +18,7 @@ Chart.js has 2 dependencies named chartjs-color and moment. It has 32 dev depend
 
 ## Functionality/Reusability - how well do its features match your need?
 D3 is the library for creating and manipulating SVG and HTML. It provides tools to help the developer visualize their data. On the other hand, Chart.js is based on canvas and only provides few types of chart. 
+
 I haven't decide yet what type of graph I draw, so I don't know which one would be great for my need.
 If I'd like to make interactive visualizions with various types of graph, then D3 would be a good fit.
 To make simple graph in a timely manner, chart.js would be great choice.
@@ -40,16 +41,21 @@ Chart.js was released on Jul, 2014, and it also has been updated until now.
 ## Ongoing development - when was its latest update? how is it supported ($$$)?
 Its latest commit of D3 was April 20. The previous commit was on April 1, so it seem to be updating steadily.
 
-Chart.js it also actively being developed. Its latest commit was on 6 hours ago as of today, May 28.
+Chart.js is also actively being developed. Its latest commit was on 6 hours ago as of today, May 28.
 
 ## License - which license does the library use?
 D3 has BSD license, so it allows to use both private and commercial. Here's more detailed descriptions for the license. <a href="https://opensource.org/licenses/BSD-3-Clause">BDS license</a>
 
+Chart.js is open source and available under the <a href="https://opensource.org/licenses/MIT">MIT license</a>.
+
 ## Supportive community - how many people use it?
-When I enter the git page of D3, there's 90,470 repositories that are used by. Also, there's 91.7k stars and it forked 22.1k times. 
+When I enter the git page of D3, there's 90,470 repositories that are used by. Also, there's 91.7k stars and it forked 22.1k times.
+
 
 ## Documentation quality - consider both quantity and quality
+Both D3 and Chart.js have well-organized documentation, but chart.js has more categories and it was easy to find the information I wanted.
 
 ## Developer support tools - can you write your own customize functions to extend it?
 D3.js: Yes, they seems that I could. There's 121 contributors.
-Chart.js: 
+
+Chart.js: They said new contributions to the library are welcome, but there's some guidelines such as not using spaces. They also mentioned active committers and contributors are invited to request commit access to the project.
