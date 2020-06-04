@@ -1,5 +1,9 @@
-$c_offwhite: #f8f3eb; 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+$c_offwhite: #f8f3eb;
+$c_hotpink: #f40552;
 $c_cyan: #8cf3ec;
+$f_openSans: 'Open Sans', sans-serif;
 
 a {
     text-decoration: none;
@@ -13,7 +17,7 @@ a {
     height: 60px;
     line-height: 60px;
     width: 100vw;
-    
+
     ul {
         float: right;
         list-style: none;
@@ -27,6 +31,7 @@ a {
     }
     li {
         display: inline-block;
+        font-family: $f_openSans;
         font-size: 1.2em;
     a {
             color: $c_offwhite;
@@ -41,6 +46,27 @@ a {
             text-transform: uppercase;
             transition: all 0.5s ease;
             -webkit-transition: all 0.5s ease;
+            &:hover {
+                color: $c_cyan;
+                transition: all 0.3s ease;
+                -webkit-transition: all 0.3s ease;
+            }
+            &:before {
+                left: 0;
+                transition: 0.5s;
+            }
+            &:after {
+                background: $c_cyan;
+                right: 0;
+            }
+            &:before, &:after {
+                content: '';
+                position: absolute;
+                width: 0%;
+                height: 1px;
+                bottom: -1px;
+                background: $c_cyan;
+            }
         }
     }
 }
@@ -60,36 +86,16 @@ a {
     text-transform: uppercase;
     a {
         color: $c_offwhite;
+        font-family: $f_openSans;
+        &:hover {
+            color: $c_hotpink;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+        }
     }
 }
 
-#navbar li a:hover {
-    /*border-bottom: 1px solid #8cf3ec;*/
-    color: $c_cyan;
-    transition: all 0.3s ease;
-    -webkit-transition: all 1s ease;
-}
-
 /* Animated Bottom Line */
-#navbar li a:before, #navbar li a:after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 1px;
-    bottom: -1px;
-    background: $c_cyan;
-}
-
-#navbar li a:before {
-    left: 0;
-    transition: 0.5s;
-}
-
-#navbar li a:after {
-    background: $c_cyan;
-    right: 0;
-    /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
-}
 
 #navbar li a:hover:before {
     background: $c_cyan;
