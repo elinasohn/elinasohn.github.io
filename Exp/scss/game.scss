@@ -1,0 +1,211 @@
+$c_btn: #c3edea;
+$c_border: #f40552;
+$c_bg: #fc7e2f;
+
+$size: 500px;
+$grid_cell: ($size / 5);
+$border: 4px;
+$min_width: 20em;
+$transition: all 0.05s ease-in;
+
+$z_index: (
+	emoji: 90,
+	box: 120,
+);
+
+@function z_index($name) {
+  @if map-has-key($z_index, $name) {
+    @return map-get($z_index, $name);  
+  }
+};
+
+@mixin size($w, $h: $w) {
+	width: $w;
+	height: $h;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	min-width: $min_width;
+	background-color: $c_bg;
+	margin: 0;
+	padding: 0;
+}
+
+::selection {
+	background-color: $c_bg;	
+}
+
+.p-btn {
+	cursor: pointer;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.game {
+	@include size(100%);
+	display: flex;
+	// Fixes iOS jagged vertical scrolling
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+
+	&__canvas {
+		@include size(100%, auto);
+		max-width: $size;
+		margin: auto; // Center magic after parent's display flex
+		position: relative; // To place box
+	}
+}
+
+.box {
+	@include size(100%);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: z_index(box);
+	
+	&__inner {
+		@include size(100%, auto);
+		background-color: $c_border;
+		box-sizing: border-box;
+		color: $c_btn;
+		font-family: 'Overpass Mono', monospace;
+		padding: 2.2rem 1.5rem;
+		position: absolute;
+		top: 22%;
+		text-align: center;
+	}
+
+	&__headline {
+		font-size: 2rem;
+		line-height: 1;
+		margin: 0;
+	}
+	
+	&__txt {
+		font-size: 0.9rem;
+	}
+	
+	&__btn {
+		background-color: $c_btn;
+		color: $c_border;
+		font-family: 'Overpass Mono', monospace;
+		font-size: 1rem;
+		font-weight: bold;
+		line-height: 1;
+		padding: 0.5rem 1rem;
+		text-transform: lowercase;
+	}
+}
+
+.grid {
+	display: grid;
+	place-items: center;
+	justify-content: center;
+	grid-template-columns: repeat(auto-fit, $grid_cell);
+	
+	&__cell {
+		@include size($grid_cell);
+	}
+	
+	&__btn {		
+		@include size(60%);
+		background-color: $c_btn;
+		border: $border solid $c_border;
+		line-height: 1.5;
+		margin: 13% 26%;
+		position: relative; // To place buttons' parts
+
+		transition: $transition;
+		&.is-pressed {
+			background-color: $c_border;
+			cursor: default;
+			transform: translate(calc(-10% + 1px), calc(10% - 1px));
+			
+			&::before {
+				width: 10%;
+			}
+			
+			&::after {
+				height: 10%;
+			}
+		}
+		
+		&::before,
+		&::after {
+			border: $border solid $c_border;
+			content: '';	
+			background: #03c7ba;
+			position: absolute;
+			transition: $transition;
+		}
+		
+		// Left part
+		&::before {
+			@include size(20%, calc(100% + #{$border / 2}));
+			border-right: 0;
+			border-bottom-width: ($border / 2);
+			transform: skew(0deg, -45deg) translateX($border * -1);
+			transform-origin: top right;
+			top: ($border * -2);
+			right: 99%;
+		}
+		
+		// Bottom part
+		&::after {
+			@include size(calc(100% + #{round($border / 3)}), 20%);
+			border-top: 0;
+			border-left-width: round($border / 1.2);
+			transform: skew(-45deg, 0deg) translateY($border);
+			transform-origin: top right;
+			top: 100%;
+			right: ($border * -2);
+		}
+
+		&__emoji {
+			position: absolute;
+			top: 40%;
+			left: 40%;
+			z-index: z_index(emoji);
+			
+			font-size: 0;		
+			&.has-emoji {
+				animation: emojiFound 1s ease-in-out alternate infinite;
+				font-size: round($size / 18);
+			}
+		}
+	}
+}
+
+@keyframes emojiFound {
+	$fontsize: 6rem;
+	$translateX: ($grid_cell / -2.2);
+	$translateY: ($grid_cell / -1.8);
+	$translate_sm: ($translateY / 5);
+	$rot_right: 25deg;
+	$rot_left: -15deg;
+	
+	0% {
+		transform: translate($translate_sm, $translate_sm);
+	}
+	25% {
+		font-size: $fontsize;
+		transform: translate($translateX, $translateY) rotate($rot_right);
+	}
+	50% {
+		font-size: $fontsize;
+		transform: translate($translateX, $translateY) rotate($rot_left);
+	}
+	75% {
+		font-size: $fontsize;
+		transform: translate($translateX, $translateY) rotate($rot_right);
+	}
+	100% {
+		font-size: $fontsize;
+		transform: translate($translateX, $translateY) rotate($rot_left);
+	}
+}
