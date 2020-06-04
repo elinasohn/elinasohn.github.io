@@ -51,7 +51,7 @@ body {
 	display: flex;
 	// Fixes iOS jagged vertical scrolling
 	overflow-y: scroll;
-	-webkit-overflow-scrolling: touch;
+    -webkit-overflow-scrolling: touch;
 
 	&__canvas {
 		@include size(100%, auto);
