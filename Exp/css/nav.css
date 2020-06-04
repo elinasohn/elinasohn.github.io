@@ -9,6 +9,32 @@ a {
   height: 60px;
   line-height: 60px;
   width: 100vw; }
+  #navbar ul {
+    float: right;
+    list-style: none;
+    /* margin-right: 14px; */
+    margin-top: -2px;
+    text-align: right;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+    padding: 0;
+    margin: auto; }
+  #navbar li {
+    display: inline-block;
+    font-size: 1.2em; }
+    #navbar li a {
+      color: #f8f3eb;
+      display: block;
+      font-size: 0.7em;
+      height: 50px;
+      letter-spacing: 1px;
+      margin: 0 20px;
+      padding: 0 4px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      transition: all 0.5s ease;
+      -webkit-transition: all 0.5s ease; }
 
 .nav-wrapper {
   margin: auto;
@@ -22,35 +48,8 @@ a {
   height: 60px;
   letter-spacing: 1px;
   text-transform: uppercase; }
-
-#navbar ul {
-  float: right;
-  list-style: none;
-  /* margin-right: 14px; */
-  margin-top: -2px;
-  text-align: right;
-  transition: transform 0.5s ease-out;
-  -webkit-transition: transform 0.5s ease-out;
-  padding: 0;
-  margin: auto; }
-
-#navbar li {
-  display: inline-block;
-  font-size: 1.2em; }
-
-#navbar li a {
-  color: #f8f3eb;
-  display: block;
-  font-size: 0.7em;
-  height: 50px;
-  letter-spacing: 1px;
-  margin: 0 20px;
-  padding: 0 4px;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease; }
+  .logo a {
+    color: #f8f3eb; }
 
 #navbar li a:hover {
   /*border-bottom: 1px solid #8cf3ec;*/

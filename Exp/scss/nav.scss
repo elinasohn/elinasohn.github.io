@@ -13,6 +13,36 @@ a {
     height: 60px;
     line-height: 60px;
     width: 100vw;
+    
+    ul {
+        float: right;
+        list-style: none;
+        /* margin-right: 14px; */
+        margin-top: -2px;
+        text-align: right;
+        transition: transform 0.5s ease-out;
+        -webkit-transition: transform 0.5s ease-out;
+        padding: 0;
+        margin: auto;
+    }
+    li {
+        display: inline-block;
+        font-size: 1.2em;
+    a {
+            color: $c_offwhite;
+            display: block;
+            font-size: 0.7em;
+            height: 50px;
+            letter-spacing: 1px;
+            margin: 0 20px;
+            padding: 0 4px;
+            position: relative;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+        }
+    }
 }
 
 .nav-wrapper {
@@ -28,38 +58,9 @@ a {
     height: 60px;
     letter-spacing: 1px;
     text-transform: uppercase;
-}
-
-#navbar ul {
-    float: right;
-    list-style: none;
-    /* margin-right: 14px; */
-    margin-top: -2px;
-    text-align: right;
-    transition: transform 0.5s ease-out;
-    -webkit-transition: transform 0.5s ease-out;
-    padding: 0;
-    margin: auto;
-}
-
-#navbar li {
-    display: inline-block;
-    font-size: 1.2em;
-}
-
-#navbar li a {
-    color: $c_offwhite;
-    display: block;
-    font-size: 0.7em;
-    height: 50px;
-    letter-spacing: 1px;
-    margin: 0 20px;
-    padding: 0 4px;
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    transition: all 0.5s ease;
-    -webkit-transition: all 0.5s ease;
+    a {
+        color: $c_offwhite;
+    }
 }
 
 #navbar li a:hover {
@@ -106,14 +107,16 @@ a {
 .nav-wrapper {
     width: 100%;
 }
-#navbar ul {
+#navbar {
+    ul {
     display: inline-block;
     float: none;
+    }
+    li {
+        font-size: 1.4rem;
+    }
 }
 
-#navbar li {
-    font-size: 1.4rem;
-}
 .game {
     margin-top: 50px;
 }
