@@ -25,7 +25,7 @@ body {
   .game__canvas {
     width: 100%;
     height: auto;
-    max-width: 500px;
+    max-width: 600px;
     margin: auto;
     position: relative; }
 
@@ -43,7 +43,7 @@ body {
     box-sizing: border-box;
     color: #c3edea;
     font-family: 'Overpass Mono', monospace;
-    padding: 2.2rem 1.5rem;
+    padding: 3.2rem 1.5rem;
     position: absolute;
     top: 22%;
     text-align: center; }
@@ -67,10 +67,10 @@ body {
   display: grid;
   place-items: center;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, 100px); }
+  grid-template-columns: repeat(auto-fit, 120px); }
   .grid__cell {
-    width: 100px;
-    height: 100px; }
+    width: 120px;
+    height: 120px; }
   .grid__btn {
     width: 60%;
     height: 60%;
@@ -120,20 +120,20 @@ body {
       font-size: 0; }
       .grid__btn__emoji.has-emoji {
         animation: emojiFound 1s ease-in-out alternate infinite;
-        font-size: 28px; }
+        font-size: 33px; }
 
 @keyframes emojiFound {
   0% {
-    transform: translate(-11.11111px, -11.11111px); }
+    transform: translate(-13.33333px, -13.33333px); }
   25% {
     font-size: 6rem;
-    transform: translate(-45.45455px, -55.55556px) rotate(25deg); }
+    transform: translate(-54.54545px, -66.66667px) rotate(25deg); }
   50% {
     font-size: 6rem;
-    transform: translate(-45.45455px, -55.55556px) rotate(-15deg); }
+    transform: translate(-54.54545px, -66.66667px) rotate(-15deg); }
   75% {
     font-size: 6rem;
-    transform: translate(-45.45455px, -55.55556px) rotate(25deg); }
+    transform: translate(-54.54545px, -66.66667px) rotate(25deg); }
   100% {
     font-size: 6rem;
-    transform: translate(-45.45455px, -55.55556px) rotate(-15deg); } }
+    transform: translate(-54.54545px, -66.66667px) rotate(-15deg); } }

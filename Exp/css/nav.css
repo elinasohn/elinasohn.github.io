@@ -18,6 +18,9 @@ a {
     text-align: right;
     transition: transform 0.5s ease-out;
     -webkit-transition: transform 0.5s ease-out;
+    -moz-transition: transform 0.5s ease-out;
+    -o-transition: transform 0.5s ease-out;
+    -ms-transition: transform 0.5s ease-out;
     padding: 0;
     margin: auto; }
   #navbar li {
@@ -36,14 +39,24 @@ a {
       text-decoration: none;
       text-transform: uppercase;
       transition: all 0.5s ease;
-      -webkit-transition: all 0.5s ease; }
+      -webkit-transition: all 0.5s ease;
+      -moz-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease; }
       #navbar li a:hover {
         color: #8cf3ec;
         transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease; }
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease; }
       #navbar li a:before {
         left: 0;
-        transition: 0.5s; }
+        transition: 0.5s;
+        -webkit-transition: 0.5s;
+        -moz-transition: 0.5s;
+        -o-transition: 0.5s;
+        -ms-transition: 0.5s; }
       #navbar li a:after {
         background: #8cf3ec;
         right: 0; }
@@ -72,14 +85,21 @@ a {
     font-family: "Open Sans", sans-serif; }
     .logo a:hover {
       color: #f40552;
-      transition: all 0.5s ease;
-      -webkit-transition: all 0.5s ease; }
+      transition: all 1s ease;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      -ms-transition: all 1s ease; }
 
 /* Animated Bottom Line */
 #navbar li a:hover:before {
   background: #8cf3ec;
   width: 100%;
-  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  -webkit-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  -moz-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  -o-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+  -ms-transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); }
 
 #navbar li a:hover:after {
   background: transparent;
@@ -100,6 +120,6 @@ a {
   .nav-wrapper {
     width: 90%; }
   #navbar li {
-    font-size: 1.8rem; }
+    font-size: 1.6rem; }
   .game {
     margin-top: 0; } }

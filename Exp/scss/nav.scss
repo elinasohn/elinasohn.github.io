@@ -5,6 +5,14 @@ $c_hotpink: #f40552;
 $c_cyan: #8cf3ec;
 $f_openSans: 'Open Sans', sans-serif;
 
+@mixin transition($in) {
+	transition:$in;
+	-webkit-transition:$in;
+	-moz-transition:$in;
+	-o-transition:$in;
+	-ms-transition:$in;
+}
+
 a {
     text-decoration: none;
 }
@@ -24,8 +32,7 @@ a {
         /* margin-right: 14px; */
         margin-top: -2px;
         text-align: right;
-        transition: transform 0.5s ease-out;
-        -webkit-transition: transform 0.5s ease-out;
+        @include transition(transform 0.5s ease-out);
         padding: 0;
         margin: auto;
     }
@@ -44,16 +51,14 @@ a {
             position: relative;
             text-decoration: none;
             text-transform: uppercase;
-            transition: all 0.5s ease;
-            -webkit-transition: all 0.5s ease;
+            @include transition(all 0.5s ease);
             &:hover {
                 color: $c_cyan;
-                transition: all 0.3s ease;
-                -webkit-transition: all 0.3s ease;
+                @include transition(all 0.3s ease);
             }
             &:before {
                 left: 0;
-                transition: 0.5s;
+                @include transition(0.5s);
             }
             &:after {
                 background: $c_cyan;
@@ -89,8 +94,7 @@ a {
         font-family: $f_openSans;
         &:hover {
             color: $c_hotpink;
-            transition: all 0.5s ease;
-            -webkit-transition: all 0.5s ease;
+            @include transition(all 1s ease);
         }
     }
 }
@@ -100,7 +104,7 @@ a {
 #navbar li a:hover:before {
     background: $c_cyan;
     width: 100%;
-    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+    @include transition(width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1)));
 }
 
 #navbar li a:hover:after {
@@ -134,7 +138,7 @@ a {
     width: 90%;
 }
 #navbar li {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 .game {
     margin-top: 0;

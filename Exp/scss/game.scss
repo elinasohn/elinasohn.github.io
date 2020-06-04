@@ -2,7 +2,7 @@ $c_btn: #c3edea;
 $c_border: #f40552;
 $c_bg: #fc7e2f;
 
-$size: 500px;
+$size: 600px;
 $grid_cell: ($size / 5);
 $border: 4px;
 $min_width: 20em;
@@ -74,7 +74,7 @@ body {
 		box-sizing: border-box;
 		color: $c_btn;
 		font-family: 'Overpass Mono', monospace;
-		padding: 2.2rem 1.5rem;
+		padding: 3.2rem 1.5rem;
 		position: absolute;
 		top: 22%;
 		text-align: center;
