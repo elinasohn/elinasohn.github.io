@@ -62,6 +62,20 @@ body {
     line-height: 1;
     padding: 0.5rem 1rem;
     text-transform: lowercase; }
+    .box__btn:hover {
+      background-color: #bef91f;
+      transition: all 0.6s ease;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease; }
+    .box__btn:not(:hover) {
+      background-color: #c3edea;
+      transition: all 0.6s ease;
+      -webkit-transition: all 0.6s ease;
+      -moz-transition: all 0.6s ease;
+      -o-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease; }
 
 .grid {
   display: grid;

@@ -3,7 +3,7 @@
  */
 
 let gameOver = false;
-const emojiString = "🍺";
+const emojiString = "🛸";
 const btnPressClass = "is-pressed";
 const emojiClass = "has-emoji";
 
@@ -16,7 +16,7 @@ const dialog = {
 		boxHeadline.innerHTML = "Play again?";
 
 		const boxText = document.querySelector("#play-box .box__txt");
-		boxText.innerHTML = "Beer is never in the same place.";
+		boxText.innerHTML = "Flying saucer is never in the same place.";
 	},
 	showPlayAgain: function(dialogBox) {
 		dialog.updateContent();
