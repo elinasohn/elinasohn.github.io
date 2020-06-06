@@ -14,6 +14,7 @@
   "author": "Yujin Sohn",
   "license": "ISC",
   "dependencies": {
+    "@mojs/core": "^0.288.2",
     "node-sass": "^4.14.1"
   }
 }

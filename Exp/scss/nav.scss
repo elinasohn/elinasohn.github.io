@@ -94,7 +94,11 @@ a {
         font-family: $f_openSans;
         &:hover {
             color: $c_hotpink;
-            @include transition(all 1s ease);
+            @include transition(all 0.7s ease);
+        }
+        &:not(:hover) {
+            color: $c_offwhite;
+            @include transition(all 0.7s ease);
         }
     }
 }
