@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 $c_cyan: #2baca4;
+$c_magenta: #ac2b72;
 $c_offwhite: #f8f3eb;
+$c_gray: #cbcbcb;
 $f_openSans: 'Open Sans', sans-serif;
 
 html {
@@ -13,9 +15,26 @@ body {
     padding: 0;
 }
 
-h2, 
+h2,
+h3,
 p {
     font-family: $f_openSans;
+}
+
+h2 {
+    border-bottom: 3px solid $c_gray;
+    padding-bottom: 8px;
+    line-height: 2rem;
+    margin: 2rem 0;
+}
+
+h3 {
+    color: $c_magenta;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
 
 .box {
@@ -24,4 +43,9 @@ p {
     padding: 1rem 2rem;
     width: 64%;
     background-color: $c_offwhite;
+}
+
+.codes {
+    padding: 1rem;
+    background-color: $c_gray;
 }

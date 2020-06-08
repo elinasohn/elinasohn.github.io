@@ -1,28 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 html {
-  background: #2baca4; }
+  background: #7cbd05; }
 
 body {
   margin: 0;
   padding: 0; }
 
 h2,
-h3,
 p {
   font-family: "Open Sans", sans-serif; }
-
-h2 {
-  border-bottom: 3px solid #cbcbcb;
-  padding-bottom: 8px;
-  line-height: 2rem;
-  margin: 2rem 0; }
-
-h3 {
-  color: #ac2b72; }
-
-p {
-  font-size: 1.2rem;
-  line-height: 2rem; }
 
 .box {
   margin: 0 auto;
@@ -30,7 +16,3 @@ p {
   padding: 1rem 2rem;
   width: 64%;
   background-color: #f8f3eb; }
-
-.codes {
-  padding: 1rem;
-  background-color: #cbcbcb; }
