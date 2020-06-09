@@ -2,10 +2,10 @@ var tl = new TimelineMax({
     paused:true
   });
 
-  tl.fromTo(".animateText", 8, {
+  tl.fromTo(".animateText", 6, {
     width: "0",
   }, {
-    width: "9.4em",
+    width: "7.5em",
     ease:  SteppedEase.config(37)
   }, 0);
 

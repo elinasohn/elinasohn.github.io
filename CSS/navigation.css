@@ -105,7 +105,7 @@ Main Navigation
 .dropdown-toggle:hover,
 .dropdown-toggle:focus {
 	background-color: #fff;
-	color: hsla(260, 6%, 21%, 1);
+	color: rgb(213, 245, 33);
 }
 
 .dropdown-toggle.toggle-on:after {
@@ -114,7 +114,7 @@ Main Navigation
 
 .main-navigation a:hover ~ .dropdown-toggle,
 .main-navigation a:focus ~ .dropdown-toggle {
-    color: hsl(0, 0%, 20%);
+    color: rgb(213, 245, 33);
 }
 
 /* Small menu. */
