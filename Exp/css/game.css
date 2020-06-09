@@ -4,12 +4,12 @@ body {
 
 body {
   min-width: 20em;
-  background-color: #fc7e2f;
+  background-color: #2d9818;
   margin: 0;
   padding: 0; }
 
 ::selection {
-  background-color: #fc7e2f; }
+  background-color: #2d9818; }
 
 .p-btn {
   cursor: pointer;
@@ -39,7 +39,7 @@ body {
   .box__inner {
     width: 100%;
     height: auto;
-    background-color: #f40552;
+    background-color: #004df4;
     box-sizing: border-box;
     color: #c3edea;
     font-family: 'Overpass Mono', monospace;
@@ -55,7 +55,7 @@ body {
     font-size: 0.9rem; }
   .box__btn {
     background-color: #c3edea;
-    color: #f40552;
+    color: #004df4;
     font-family: 'Overpass Mono', monospace;
     font-size: 1rem;
     font-weight: bold;
@@ -89,13 +89,13 @@ body {
     width: 60%;
     height: 60%;
     background-color: #c3edea;
-    border: 4px solid #f40552;
+    border: 4px solid #004df4;
     line-height: 1.5;
     margin: 13% 26%;
     position: relative;
     transition: all 0.05s ease-in; }
     .grid__btn.is-pressed {
-      background-color: #f40552;
+      background-color: #004df4;
       cursor: default;
       transform: translate(calc(-10% + 1px), calc(10% - 1px)); }
       .grid__btn.is-pressed::before {
@@ -103,7 +103,7 @@ body {
       .grid__btn.is-pressed::after {
         height: 10%; }
     .grid__btn::before, .grid__btn::after {
-      border: 4px solid #f40552;
+      border: 4px solid #004df4;
       content: '';
       background: #03c7ba;
       position: absolute;

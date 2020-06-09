@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Design Guide for Gallery Website</title>
-    <meta name="description" content="Professional Portfolio"/>
-
-    <!-- Stylesheets, inlcuding custom fonts, go here -->
-    <link rel="stylesheet" href="style-for-dg.css" type="text/css" media="all">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Design Guide for Gallery Website</title>
+<meta name="description" content="Professional Portfolio"/>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<!-- Stylesheets, inlcuding custom fonts, go here -->
+<link rel="stylesheet" href="style-for-dg.css" type="text/css" media="all">
 </head>
 
 <body>
@@ -39,10 +40,10 @@
         </nav>
     </header><!-- .masthead -->
     <main class="main-area">
-    <h1>Design guide for Gallery site</h1>
+    <h1>Design Guide for Gallery Site</h1>
     <div class="guide-box">
     <div class="tab">
-    <button class="tablinks" onclick="openPage(event, 'site-purpose')">Site Purpose</button>
+    <button class="tablinks" onclick="openPage(event, 'site-purpose')" id="defaultOpen">Site Purpose</button>
     <button class="tablinks" onclick="openPage(event, 'mood-board')">Mood Board</button>
     <button class="tablinks" onclick="openPage(event, 'sketch')">Sketch</button>
     <button class="tablinks" onclick="openPage(event, 'color-palette')">Color Palette</button>
@@ -52,27 +53,29 @@
           
     <div id="site-purpose" class="tabcontent">
     <h3>Site Purpose</h3>
-    <p>Site purpose is the capital city of England.</p>
+    <p>It is a site for sharing delicious recipes with people. The site will display photos of food and show how to cook easily at home. On the home page, the users will see the gallery of food, and then when the users click on the food they want to know recipes, they can see in detail how to make it on the detailed page.</p>
     </div>
     
     <div id="mood-board" class="tabcontent">
     <h3>Mood Board</h3>
-    <p>Mood board is the capital of France.</p> 
+    <p>Here's the board. I used <a href="https://www.pinterest.com/eliys0919/gallery-mood-board/">Pinterest</a>.</p> 
     </div>
     
     <div id="sketch" class="tabcontent">
     <h3>Design Sketch</h3>
-    <p>Sketch is the capital of Japan.</p>
+    <p><img src="Images/gal-mobile.jpg"><br>Mobile view</p>
+    <p><img src="Images/gal-tablet.jpg"><br>Tablet view</p>
+    <p><img src="Images/gal-desktop.jpg"><br>Desktop view</p>
     </div>
 
     <div id="color-palette" class="tabcontent">
     <h3>Color Palette</h3>
-    <p>color palette is the capital of Japan.</p>
+    <p>I will use a monotone color palette to make the users focus on the colors of food. The one point color that I'll use is the mustard color. It is to give some points to the headings of the recipe's detail page.</p>
     </div>
 
     <div id="style-tile" class="tabcontent">
     <h3>Style Tile</h3>
-    <p>Style tile is the capital of France.</p> 
+    <p><img src="Images/gal-style-tile.jpg"></p> 
     </div>
     </main><!-- .main-area -->
     </div>

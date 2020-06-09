@@ -43,8 +43,22 @@ h1 {
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 6px 12px;
+  padding: 2rem 2.5rem;
   border: 1px solid #ccc;
   background-color: white;
   border-top: none;
+}
+
+#sketch p {
+    text-align: center;
+}
+
+#sketch img {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+#style-tile img {
+    max-width: 750px;
+    margin: 0 auto;
 }
