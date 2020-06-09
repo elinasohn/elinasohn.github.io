@@ -58,6 +58,7 @@ Main Navigation
 
 .main-navigation .current-menu-item > a{
 	font-weight: 700;
+	color: rgb(252, 235, 0);
 }
 
 .main-navigation .nav-menu > ul > li:first-child,
@@ -235,7 +236,7 @@ Main Navigation
 
     .main-navigation a,
     .dropdown-toggle {
-        color: hsl(0, 0%, 20%);
+        color: hsl(0, 0%, 100%);
     }
 
 	.main-navigation a,
@@ -247,9 +248,8 @@ Main Navigation
 	.main-navigation a:hover,
 	.main-navigation a:focus {
 		background: transparent;
-		color: hsla(260, 6%, 21%, 1);
+		color: rgb(252, 252, 252);
 		text-decoration: underline;
-		outline: solid 1px #b3b3b3;
 	}
 
     .main-navigation li li a {
@@ -293,7 +293,6 @@ Main Navigation
 
     .dropdown-toggle:hover, .dropdown-toggle:focus {
         background-color: inherit;
-        outline: solid 1px #b3b3b3;
     }
 
 	.dropdown-toggle::after {

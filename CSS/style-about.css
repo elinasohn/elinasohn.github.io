@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(132, 201, 89);
+}
+
+h1 {
+    color: white;
+}
+
+.about {
+    margin: 0 auto;
+    padding: 1.4rem;
+    width: 75%;
+    background-color: white;
+}

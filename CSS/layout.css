@@ -2,12 +2,18 @@
 Layouts
 --------------------------------------------------------------*/
 
+body {
+    padding: 0;
+}
 
+
+body, .sectionOne {
+    background-color: rgb(235, 117, 44);
+    color: hsla(260, 6%, 21%, 1);
+}
 
 .sectionOne {
     padding: 2em 1em;
-    background-color: rgb(235, 117, 44);
-    color: hsla(260, 6%, 21%, 1);
 }
 
 .sectionTwo {
@@ -31,23 +37,8 @@ Layouts
     padding: 10em 1em;
 }
 
-.contentForAbout {
-    background: hsla(260, 6%, 21%, 1);
-    color: white;
-    padding: 1.2em;
-    line-height: 2em;
-}
-
-.sectonAbout {
-    color: white;
-}
-
-.aboutText {
-    font-size: 1.2em;
-    padding: 1em;
-}
-
 .footer-area {
+    color: white;
     text-align: center;
     padding: 3em 1em;
 }

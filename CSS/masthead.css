@@ -2,10 +2,6 @@
 Header styles minus menu
 --------------------------------------------------------------*/
 
-.masthead {
-    background: rgb(235, 117, 44);
-}
-
 @media screen and (min-width: 50em) {
     .masthead {
         display: flex;
