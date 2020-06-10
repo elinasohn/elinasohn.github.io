@@ -20,6 +20,9 @@ footer {
   footer a:visited {
     color: #ffb882; }
 
+#beep {
+  display: none; }
+
 ::selection {
   background-color: #2d9818; }
 

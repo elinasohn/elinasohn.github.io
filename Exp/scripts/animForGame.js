@@ -6,6 +6,11 @@ let gameOver = false;
 const emojiString = "🛸";
 const btnPressClass = "is-pressed";
 const emojiClass = "has-emoji";
+const gameBeep = document.getElementById("beep");
+
+function play() {
+	gameBeep.play();
+}
 
 const dialog = {
 	hide: function(dialogBox) {
