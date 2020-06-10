@@ -10,7 +10,9 @@ const gameBeep = document.getElementById("beep");
 
 function play() {
 	gameBeep.play();
+	play.currentTime=0;
 }
+/*************************/
 
 const dialog = {
 	hide: function(dialogBox) {
