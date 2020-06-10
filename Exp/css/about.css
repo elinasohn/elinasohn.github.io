@@ -34,3 +34,13 @@ p {
 .codes {
   padding: 1rem;
   background-color: #cbcbcb; }
+
+footer {
+  text-align: center;
+  padding: 2rem 1.4rem;
+  font-family: "Open Sans", sans-serif;
+  color: white; }
+  footer a:link {
+    color: #ffff7e; }
+  footer a:visited {
+    color: #ffb882; }
