@@ -6,7 +6,7 @@ particlesJS("particles-js", {
         type: "star",
         stroke: { width: 0, color: "#000000" },
         polygon: { nb_sides: 5 },
-        image: { src: "./images/alien.svg", width: 100, height: 100 }
+        image: { src: "", width: 100, height: 100 }
       },
       opacity: {
         value: 1,
