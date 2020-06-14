@@ -1,19 +1,67 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
 
 body {
-    background-color: rgb(132, 201, 89);
+    background-color: rgb(54, 172, 74);
 }
 
 h1 {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
+    text-align: left;
+    padding: 0;
+    margin-left: 6rem;
+    margin-top: 6rem;
     font-size: 3rem;
 }
 
 .about {
     margin: 0 auto;
-    padding: 2.5rem 2rem;;
-    width: 75%;
-    background-color: white;
+    margin-top: 2rem;
+    color: white;
+    padding: 0 2rem;
+    width: 90%;
+}
+
+.introduce {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    width: 45%;
+    float: left;
+    margin: 0 1.6rem;
+}
+
+@media only screen and (max-width: 486px) {
+    h1 {
+        font-size: 1.6rem;
+        margin: 0 1.2rem auto;
+        margin-top: 2rem;
+    }
+    .about {
+        width: 100%;
+        padding: 0 1.4rem;
+        margin: 0;
+    }
+    .introduce {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}
+
+@media only screen and (min-width: 487px) and (max-width: 784px) {
+    .about {
+        width: 90%;
+        padding: 0;
+    }
+    h1 {
+        margin: 0 2rem auto;
+        margin-top: 2rem;
+        font-size: 2rem;
+    }
+    .introduce {
+        float: none;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
 }
