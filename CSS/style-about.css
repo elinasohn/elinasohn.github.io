@@ -30,6 +30,23 @@ h1 {
     margin: 0 1.6rem;
 }
 
+.upper {
+    transform: translateY(-300px);
+    animation: 2s bounce ease forwards 0.5s;
+}
+.lower {
+    transform: translateY(-500px);
+    animation: 2s bounce ease forwards 1s;
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1)    translateY(0); }
+    10%  { transform: scale(1.1,.9) translateY(0); }
+    30%  { transform: scale(.9,1.1) translateY(-30px); }
+    50%  { transform: scale(1,1)    translateY(0); }
+    100% { transform: scale(1,1)    translateY(0); }
+}
+
 @media only screen and (max-width: 486px) {
     h1 {
         font-size: 1.6rem;

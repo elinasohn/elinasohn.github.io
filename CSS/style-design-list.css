@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+body {
+    background-color: #b8a835;
+}
+
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(46, 46, 46);
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  color: white;
+  height: 5%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  padding: 1.2rem;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+h2 {
+    color: white;
+    font-weight: 300;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 90%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-general {
+  padding: 75px 0;
+  margin: 0 auto;
+  width: 800px;
+}
+.container-general .gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
+}
+.container-general .gallery-wrap .item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.8s ease;
+}
+.container-general .gallery-wrap .item:hover {
+  flex: 7;
+}
+.wrap-effect .item {
+    filter: grayscale(100%);
+}
+.wrap-effect .item a {
+    color: white;
+    background-color: rgba(16, 16, 16, 0.8);
+    padding: 2rem 3rem;
+    text-decoration: none;
+    visibility: hidden;
+    position: absolute;
+    top: 70%;
+    right: 36.6%;
+}
+
+.wrap-effect .item:hover {
+  transform: translate3d(0, 0, 100px);
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  filter: grayscale(0%);
+}
+
+.wrap-effect .item:hover a{
+    visibility: visible;
+}
+
+.wrap-effect .item:first-of-type {
+  background-image: url("../Images/slide1.jpg");
+}
+.wrap-effect .item:nth-of-type(2) {
+  background-image: url("../Images/slide2.jpg");
+}
+.wrap-effect .item:nth-of-type(3) {
+  background-image: url("../Images/slide3.jpg");
+}
+
+@media only screen and (max-width: 480px) {
+    .heading {
+        font-size: 2.2rem;
+    }
+    h2 {
+        padding: 0 0.4rem;
+    }
+    .wrap-effect .item a {
+        right: 24%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 786px) {
+    h2 {
+        padding: 0 0.6rem;
+    }
+}
