@@ -75,10 +75,11 @@ h2 {
     background-color: rgba(16, 16, 16, 0.8);
     padding: 2rem 3rem;
     text-decoration: none;
-    visibility: hidden;
     position: absolute;
     top: 70%;
     right: 36.6%;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
 }
 
 .wrap-effect .item:hover {
@@ -88,7 +89,8 @@ h2 {
 }
 
 .wrap-effect .item:hover a{
-    visibility: visible;
+    transition-delay: 0.4s;
+    opacity: 1;
 }
 
 .wrap-effect .item:first-of-type {
