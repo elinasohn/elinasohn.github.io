@@ -7,6 +7,10 @@ html {
 	font-family: 'Muli', sans-serif;
 }
 
+i {
+	margin-right: 0.3rem;
+}
+
 button,
 input,
 select,
